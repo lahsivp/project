@@ -1,0 +1,370 @@
+
+<section id="footer-official-service" class="footer-official-service sec footer" v-cloak>
+    <div class="sec-wrapper">
+      <div class="service-list">
+        <a :href="item.link" class="service-item" v-for="item in list" :key="item.id">
+          <img class="service-icon" :src="item.icon">
+          <div class="service-title">${ item.title }</div>
+          <div class="service-desc ellipsis-2">${ item.subTitle }</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+<script>"use strict";
+
+var data = {
+  "list": []
+};
+
+if (window.Vue) {
+  var OfficialServiceCtx = new Vue({
+    el: '#footer-official-service',
+    delimiters: ['${', '}'],
+    // 修改插值符号 与 art-template 冲突
+    data: data,
+    computed: {
+      isMobile: function isMobile() {
+        return window.innerWidth < 769;
+      }
+    }
+  });
+}</script>
+<style>.footer .footer-services {
+  display: none; }
+
+.footer-official-service {
+  background: #fff; }
+  @media screen and (min-width: 769px) {
+    .footer-official-service .sec-wrapper {
+      width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      padding-top: 20px; }
+    .footer-official-service .service-list {
+      margin-right: -50px;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap; }
+      .footer-official-service .service-list .service-item {
+        width: 285px;
+        padding: 19px 17px;
+        background: #f9f9f9;
+        border-radius: 16px;
+        margin-right: 20px;
+        box-sizing: border-box;
+        margin-bottom: 20px; }
+        .footer-official-service .service-list .service-item .service-icon {
+          width: 30px;
+          height: 30px; }
+          .footer-official-service .service-list .service-item .service-icon img {
+            width: 100%;
+            height: 100%; }
+        .footer-official-service .service-list .service-item .service-title {
+          font-size: 16px;
+          line-height: 16px;
+          color: #000;
+          margin-top: 8px;
+          font-weight: bold; }
+        .footer-official-service .service-list .service-item .service-desc {
+          font-size: 14px;
+          line-height: 18px;
+          height: 36px;
+          color: #666;
+          margin-top: 8px; } }
+  @media screen and (max-width: 769px) {
+    .footer-official-service .sec-wrapper {
+      overflow: hidden;
+      width: 3.44rem; }
+    .footer-official-service .service-list {
+      margin-right: -.2rem;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap; }
+      .footer-official-service .service-list .service-item {
+        width: 1.68rem;
+        padding: .08rem .1rem .12rem;
+        background: #f9f9f9;
+        border-radius: .12rem;
+        margin-right: .08rem;
+        box-sizing: border-box;
+        margin-bottom: .08rem; }
+        .footer-official-service .service-list .service-item .service-icon {
+          width: .3rem;
+          height: .3rem; }
+          .footer-official-service .service-list .service-item .service-icon img {
+            width: 100%;
+            height: 100%; }
+        .footer-official-service .service-list .service-item .service-title {
+          font-size: .12rem;
+          line-height: .12rem;
+          color: #000;
+          margin-top: .06rem;
+          font-weight: bold; }
+        .footer-official-service .service-list .service-item .service-desc {
+          font-size: .1rem;
+          line-height: .14rem;
+          height: .28rem;
+          color: #666;
+          margin-top: .08rem; } }
+</style>
+
+<footer class="footer">
+  <div class="footer-services">
+    <div class="wrapper">
+        <a href="https://www.realme.com/in/legal/terms-sales" class="footer-service">
+            <span class="icon icon-s-freeshipping"></span>
+            <span>Free shipping</span>
+        </a>
+        <a href="https://www.realme.com/in/legal/terms-sales" class="footer-service">
+            <span class="icon icon-s-payment"></span>
+            <span>Secure payment</span>
+        </a>
+        <a href="https://www.realme.com/in/legal/terms-sales" class="footer-service">
+            <span class="icon icon-s-cod"></span>
+            <span>Cash On Delivery</span>
+        </a>
+        <a href="https://www.realme.com/in/legal/warranty-terms" class="footer-service">
+            <span class="icon icon-s-online"></span>
+            <span>Warranty Policy</span>
+        </a>
+    </div>
+  </div>
+  <div class="footer-center">
+    
+<div class="footer-menus">
+  <div class="wrapper">
+    
+    
+    <div class="footer-menu">
+      <div class="footer-menu-title">Recommended<span class="icon icon-arrow-down"></span></div>
+      <ul class="footer-menu-list">
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="https://buy.realme.com/in/goods/678?utm_source=footer&#38;feedback=60x" title="realme narzo 60x 5G" target="_blank"
+          class="gtag" data-gtm="bottom_navigation|realme narzo 60x 5G">realme narzo 60x 5G</a>
+        </li>
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="https://buy.realme.com/in/goods/677?utm_source=footer&#38;feedback=c51" title="realme C51" target="_blank"
+          class="gtag" data-gtm="bottom_navigation|realme C51">realme C51</a>
+        </li>
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="https://buy.realme.com/in/goods/666?utm_source=footer&#38;feedback=11x" title="realme 11 5G" target="_blank"
+          class="gtag" data-gtm="bottom_navigation|realme 11 5G">realme 11 5G</a>
+        </li>
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="https://buy.realme.com/in/goods/665?utm_source=footer&#38;feedback=11x" title="realme 11x 5G" target="_blank"
+          class="gtag" data-gtm="bottom_navigation|realme 11x 5G">realme 11x 5G</a>
+        </li>
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="https://buy.realme.com/in/goods/650?utm_source=footer&#38;feedback=c53" title="realme C53" target="_blank"
+          class="gtag" data-gtm="bottom_navigation|realme C53">realme C53</a>
+        </li>
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="https://buy.realme.com/in/goods/646?utm_source=footer&#38;feedback=narzo60" title="realme narzo 60 5G" target="_blank"
+          class="gtag" data-gtm="bottom_navigation|realme narzo 60 5G">realme narzo 60 5G</a>
+        </li>
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="https://buy.realme.com/in/goods/647?utm_source=footer&#38;feedback=narzo60" title="realme narzo 60 Pro 5G" target="_blank"
+          class="gtag" data-gtm="bottom_navigation|realme narzo 60 Pro 5G">realme narzo 60 Pro 5G</a>
+        </li>
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="https://buy.realme.com/in/goods/635&#38;utm_source=web&#38;feedback=N53&#38;utm_medium=footer" title="realme 11 Pro 5G" target="_blank"
+          class="gtag" data-gtm="bottom_navigation|realme 11 Pro 5G">realme 11 Pro 5G</a>
+        </li>
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="https://buy.realme.com/in/goods/634&#38;utm_source=web&#38;feedback=N53&#38;utm_medium=footer" title="realme 11 Pro+ 5G" target="_blank"
+          class="gtag" data-gtm="bottom_navigation|realme 11 Pro+ 5G">realme 11 Pro+ 5G</a>
+        </li>
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="https://www.realme.com/in/realme-phones?utm_source=web&#38;utm_medium=footer" title="More phones" target="_self"
+          class="gtag" data-gtm="bottom_navigation|More phones">More phones</a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    
+    
+    <div class="footer-menu">
+      <div class="footer-menu-title">Support<span class="icon icon-arrow-down"></span></div>
+      <ul class="footer-menu-list">
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="https://event.realme.com/in/realme-membership-brief" title="realme VIP" target="_self"
+          class="gtag" data-gtm="bottom_navigation|realme VIP">realme VIP</a>
+        </li>
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="https://www.realme.com/in/support/care-plus" title="realme care+" target="_self"
+          class="gtag" data-gtm="bottom_navigation|realme care+">realme care+</a>
+        </li>
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="https://www.realme.com/in/support/kw/faq?classify=&#38;page=1" title="FAQ" target="_self"
+          class="gtag" data-gtm="bottom_navigation|FAQ">FAQ</a>
+        </li>
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="https://www.realme.com/in/support#user-guid" title="User Guide" target="_self"
+          class="gtag" data-gtm="bottom_navigation|User Guide">User Guide</a>
+        </li>
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="https://www.realme.com/in/support/services" title="Service Centers" target="_self"
+          class="gtag" data-gtm="bottom_navigation|Service Centers">Service Centers</a>
+        </li>
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="https://www.realme.com/in/legal/coins" title="realme Coins" target="_self"
+          class="gtag" data-gtm="bottom_navigation|realme Coins">realme Coins</a>
+        </li>
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="https://www.realme.com/in/legal/e-waste-management" title="E-waste Management" target="_self"
+          class="gtag" data-gtm="bottom_navigation|E-waste Management">E-waste Management</a>
+        </li>
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="https://www.realme.com/in/legal/exchange" title="realme Exchange T&#38;C" target="_self"
+          class="gtag" data-gtm="bottom_navigation|realme Exchange T&#38;C">realme Exchange T&#38;C</a>
+        </li>
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="https://www.realme.com/in/realme-ui-4" title="UI 4.0" target="_self"
+          class="gtag" data-gtm="bottom_navigation|UI 4.0">UI 4.0</a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    
+    
+    <div class="footer-menu">
+      <div class="footer-menu-title">About realme<span class="icon icon-arrow-down"></span></div>
+      <ul class="footer-menu-list">
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="https://www.realme.com/in/brand" title="Our Brand" target="_self"
+          class="gtag" data-gtm="bottom_navigation|Our Brand">Our Brand</a>
+        </li>
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="https://www.realme.com/in/store-address" title="Retail Store" target="_self"
+          class="gtag" data-gtm="bottom_navigation|Retail Store">Retail Store</a>
+        </li>
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="https://www.realme.com/in/legal/declaration" title="Declaration" target="_self"
+          class="gtag" data-gtm="bottom_navigation|Declaration">Declaration</a>
+        </li>
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="https://www.realme.com/in/realmeow" title="realmeow" target="_self"
+          class="gtag" data-gtm="bottom_navigation|realmeow">realmeow</a>
+        </li>
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="https://www.realme.com/in/legal/disclosure" title="Disclosure" target="_self"
+          class="gtag" data-gtm="bottom_navigation|Disclosure">Disclosure</a>
+        </li>
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="https://www.realme.com/in/legal/sourcing" title="Integrity and Anti-corruption" target="_self"
+          class="gtag" data-gtm="bottom_navigation|Integrity and Anti-corruption">Integrity and Anti-corruption</a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    
+    
+    <div class="footer-menu">
+      <div class="footer-menu-title">Contact realme<span class="icon icon-arrow-down"></span></div>
+      <ul class="footer-menu-list">
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="javascript:void(0)" title="HR: HR@realme.com" target="_self"
+          class="gtag" data-gtm="bottom_navigation|HR: HR@realme.com">HR: HR@realme.com</a>
+        </li>
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="javascript:void(0)" title="PR: indiapr@realme.com" target="_self"
+          class="gtag" data-gtm="bottom_navigation|PR: indiapr@realme.com">PR: indiapr@realme.com</a>
+        </li>
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="javascript:void(0)" title="Legal: legal.in@realme.com" target="_self"
+          class="gtag" data-gtm="bottom_navigation|Legal: legal.in@realme.com">Legal: legal.in@realme.com</a>
+        </li>
+        
+        <li style="white-space: nowrap;">
+          <a id="" href="javascript:void(0)" title="Marketing: marketing.in@realme.com" target="_self"
+          class="gtag" data-gtm="bottom_navigation|Marketing: marketing.in@realme.com">Marketing: marketing.in@realme.com</a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    
+  </div>
+</div>
+
+    <div class="footer-contact">
+      <!-- <div class="footer-contact-time">9:00-21:00, MON-SUN <br> Including Holidays</div> -->
+
+      <div class="footer-contact-online"><a href="javascript:;" onclick="openSupportChat()" rel="nofollow"
+          title="chat support"><span class="icon icon-chat"></span>CHAT SUPPORT</a></div>
+
+      <div class="footer-contact-time">9:00-21:00, MON-SUN <br> Including Holidays</div>
+      <div class="footer-contact-phone"><a href="tel:18001022777" rel="nofollow">1800 102 2777</a></div>
+      <div class="footer-socials">
+        <a rel="nofollow" href="https://www.facebook.com/realmeIndia/" class="footer-social" target="_blank"
+          title="realme facebook"><span class="icon icon-facebook"></span></a>
+        <a rel="nofollow" href="https://twitter.com/realmeIndia" class="footer-social" target="_blank"
+          title="realme twitter"><span class="icon icon-twitter"></span></a>
+        <a rel="nofollow" href="https://www.youtube.com/realmemobiles" class="footer-social" target="_blank"
+          title="realme youtube"><span class="icon icon-youtube"></span></a>
+        <a rel="nofollow" href="https://www.instagram.com/realmeindia/" class="footer-social" target="_blank"
+          title="realme instagram"><span class="icon icon-instagram"></span></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-region"><a rel="nofollow" href="javascript:;">India ( English / INR )</a></div>
+  <div class="footer-bottom">
+    <div class="wrapper">
+      <div class="copyright">
+        &copy; 2018-2023 realme. All Rights Reserved.
+      </div>
+      <div class="footer-legal">
+        <a href="https://www.realme.com/in/legal/user-agreement" title="User Agreement">User Agreement</a>
+        <a href="https://www.realme.com/in/legal/privacy-policy" title="Privacy Policy">Privacy Policy</a>
+        <a href="https://www.realme.com/in/legal/terms-sales" title="Terms of Sales">Terms of Sales</a>
+        <a href="https://www.realme.com/in/legal/warranty-terms" title="Warranty Terms">Warranty Terms</a>
+      </div>
+    </div>
+  </div>
+  <section>
+    <div class="r-cookie">
+      <div class="wrapper r-cookie--body">
+        <div class="r-cookie--content">
+          This site uses cookies and similar technologies to work properly. With your permission, we'd like to set cookies to help us analyse traffic and optimise your browsing experience.
+        </div>
+        <div class="r-cookie--btn">
+          <a href="https://www.realme.com/in/legal/privacy-policy" target="_blank" class="btn r-btn r-btn--normal">Learn more</a>
+          <div class="btn r-btn r-btn--primary">Accept</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
